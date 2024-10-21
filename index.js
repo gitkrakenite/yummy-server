@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
-const colors = require("colors");
-const dotenv = require("dotenv").config();
+require("colors");
+require("dotenv").config();
 
 const connectDB = require("./config/db");
 const userRouter = require("./routes/userRoutes");
@@ -12,7 +12,7 @@ const feedBackRouter = require("./routes/feedbackRoutes");
 const sendUsRouter = require("./routes/sendUsRoutes");
 const receiptsRouter = require("./routes/receiptRoutes");
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8000;
 const app = express();
 
 app.use(express.json());
